@@ -1,0 +1,170 @@
+[14-Jun-2024 14:58:13 UTC] Hello, errors!
+This is a test error message.[14-Jun-2024 14:58:31 UTC] Hello, errors!
+This is a test error message.[14-Jun-2024 14:59:54 UTC] Hello, errors!
+This is a test error message.[14-Jun-2024 15:00:41 UTC] Hello, errors!
+This is a test error message.[14-Jun-2024 15:01:15 UTC] Hello, errors!
+This is a test error message.[14-Jun-2024 15:01:50 UTC] Hello, errors!
+This is a test error message.[14-Jun-2024 15:01:55 UTC] Hello, errors!
+This is a test error message.[14-Jun-2024 15:03:39 UTC] Hello, errors!
+This is a test error message.[14-Jun-2024 15:04:26 UTC] Hello, errors!
+This is a test error message.[14-Jun-2024 15:06:11 UTC] Hello, errors!
+This is a test error message.[14-Jun-2024 15:10:24 UTC] Hello, errors!
+[14-Jun-2024 15:13:48 UTC] Hello, errors!
+[14-Jun-2024 15:15:07 UTC] Hello, errors!
+[17-Jun-2024 11:21:11 UTC] Hello, errors!
+[17-Jun-2024 11:38:35 UTC] Hello, errors!
+[17-Jun-2024 11:40:57 UTC] Hello, errors!
+[17-Jun-2024 11:41:12 UTC] Hello, errors!
+[17-Jun-2024 11:41:29 UTC] Hello, errors!
+[17-Jun-2024 11:42:03 UTC] Hello, errors!
+[17-Jun-2024 11:46:31 UTC] Hello, errors!
+[17-Jun-2024 12:30:09 UTC] Hello, errors!
+[17-Jun-2024 12:30:12 UTC] Hello, errors!
+[17-Jun-2024 12:30:20 UTC] Hello, errors!
+[17-Jun-2024 12:30:30 UTC] Hello, errors!
+[21-Jun-2024 11:05:44 UTC] Hello, errors!
+[21-Jun-2024 11:18:03 UTC] Hello, errors new!
+[21-Jun-2024 11:18:03 UTC] PHP Fatal error:  Uncaught Exception: La query SQL non è stata generata correttamente. in /home/www/bfpanel/apps/file/query.php:77
+Stack trace:
+#0 {main}
+  thrown in /home/www/bfpanel/apps/file/query.php on line 77
+[21-Jun-2024 11:22:52 UTC] Hello, errors new!
+[21-Jun-2024 11:22:52 UTC] PHP Fatal error:  Uncaught Exception: La query SQL non è stata generata correttamente. in /home/www/bfpanel/apps/file/query.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/www/bfpanel/apps/file/query.php on line 78
+[21-Jun-2024 11:25:04 UTC] Hello, errors new!
+[21-Jun-2024 11:25:04 UTC] PHP Fatal error:  Uncaught Exception: La query SQL non è stata generata correttamente. in /home/www/bfpanel/apps/file/query.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/www/bfpanel/apps/file/query.php on line 78
+[21-Jun-2024 11:26:03 UTC] Hello, errors new!
+[21-Jun-2024 11:26:03 UTC] PHP Fatal error:  Uncaught Exception: La query SQL non è stata generata correttamente. in /home/www/bfpanel/apps/file/query.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/www/bfpanel/apps/file/query.php on line 78
+[21-Jun-2024 11:29:23 UTC] Hello, errors new!
+[21-Jun-2024 11:29:23 UTC] PHP Fatal error:  Uncaught Exception: La query SQL non è stata generata correttamente. in /home/www/bfpanel/apps/file/query.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/www/bfpanel/apps/file/query.php on line 78
+[21-Jun-2024 11:31:08 UTC] Hello, errors new!
+[21-Jun-2024 11:31:08 UTC] PHP Fatal error:  Uncaught Exception: La query SQL non è stata generata correttamente. in /home/www/bfpanel/apps/file/query.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/www/bfpanel/apps/file/query.php on line 78
+[21-Jun-2024 11:34:19 UTC] Hello, errors new!
+[21-Jun-2024 11:34:21 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Traceback (most recent call last):
+  File "/home/www/bfpanel/apps/file/querya...' at line 1 in /home/www/bfpanel/apps/file/query.php:87
+Stack trace:
+#0 /home/www/bfpanel/apps/file/query.php(87): mysqli->query()
+#1 {main}
+  thrown in /home/www/bfpanel/apps/file/query.php on line 87
+[21-Jun-2024 11:34:50 UTC] Hello, errors new!
+[21-Jun-2024 11:34:55 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '{"sql_query": "SELECT COUNT(*) FROM paziente WHERE anno_nascita <= (YEAR(CURD...' at line 1 in /home/www/bfpanel/apps/file/query.php:87
+Stack trace:
+#0 /home/www/bfpanel/apps/file/query.php(87): mysqli->query()
+#1 {main}
+  thrown in /home/www/bfpanel/apps/file/query.php on line 87
+[21-Jun-2024 11:36:38 UTC] Hello, errors new!
+[21-Jun-2024 11:36:43 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '{"sql_query": "SELECT COUNT(*) FROM paziente WHERE anno_nascita <= (YEAR(CURD...' at line 1 in /home/www/bfpanel/apps/file/query.php:87
+Stack trace:
+#0 /home/www/bfpanel/apps/file/query.php(87): mysqli->query()
+#1 {main}
+  thrown in /home/www/bfpanel/apps/file/query.php on line 87
+[21-Jun-2024 14:19:21 UTC] Hello, errors new2!
+[21-Jun-2024 14:19:26 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '{"sql_query": "SELECT COUNT(*) FROM utente;"}' at line 1 in /home/www/bfpanel/apps/file/query.php:104
+Stack trace:
+#0 /home/www/bfpanel/apps/file/query.php(104): mysqli->query()
+#1 {main}
+  thrown in /home/www/bfpanel/apps/file/query.php on line 104
+[21-Jun-2024 14:21:53 UTC] Hello, errors new2!
+[21-Jun-2024 14:21:58 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '{"sql_query": "SELECT COUNT(*) FROM utente;"}' at line 1 in /home/www/bfpanel/apps/file/query.php:104
+Stack trace:
+#0 /home/www/bfpanel/apps/file/query.php(104): mysqli->query()
+#1 {main}
+  thrown in /home/www/bfpanel/apps/file/query.php on line 104
+[21-Jun-2024 14:23:54 UTC] Hello, errors new2!
+[21-Jun-2024 14:23:59 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '{"sql_query": "SELECT COUNT(*) FROM utente"}' at line 1 in /home/www/bfpanel/apps/file/query.php:104
+Stack trace:
+#0 /home/www/bfpanel/apps/file/query.php(104): mysqli->query()
+#1 {main}
+  thrown in /home/www/bfpanel/apps/file/query.php on line 104
+[21-Jun-2024 14:25:16 UTC] Hello, errors new2!
+[21-Jun-2024 14:25:20 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '{"sql_query": "SELECT COUNT(*) FROM paziente"}' at line 1 in /home/www/bfpanel/apps/file/query.php:104
+Stack trace:
+#0 /home/www/bfpanel/apps/file/query.php(104): mysqli->query()
+#1 {main}
+  thrown in /home/www/bfpanel/apps/file/query.php on line 104
+[21-Jun-2024 14:27:01 UTC] Hello, errors new2!
+[21-Jun-2024 14:27:06 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '{"sql_query": "SELECT COUNT(*) FROM bf_anagrafica"}' at line 1 in /home/www/bfpanel/apps/file/query.php:104
+Stack trace:
+#0 /home/www/bfpanel/apps/file/query.php(104): mysqli->query()
+#1 {main}
+  thrown in /home/www/bfpanel/apps/file/query.php on line 104
+[21-Jun-2024 14:32:34 UTC] Hello, errors new2!
+[21-Jun-2024 14:32:54 UTC] Hello, errors new2!
+[21-Jun-2024 14:38:54 UTC] Hello, errors new2!
+[21-Jun-2024 14:45:14 UTC] Hello, errors new2!
+[21-Jun-2024 14:46:10 UTC] Hello, errors new2!
+[21-Jun-2024 14:47:20 UTC] Hello, errors new2!
+[21-Jun-2024 15:33:20 UTC] Hello, errors new2!
+[21-Jun-2024 15:33:26 UTC] Hello, errors new2!
+[21-Jun-2024 15:50:20 UTC] Hello, errors new2!
+[21-Jun-2024 15:50:26 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'nuovaterra.utente' doesn't exist in /home/www/bfpanel/apps/file/query.php:137
+Stack trace:
+#0 /home/www/bfpanel/apps/file/query.php(137): mysqli->query()
+#1 {main}
+  thrown in /home/www/bfpanel/apps/file/query.php on line 137
+[21-Jun-2024 15:53:41 UTC] Hello, errors new2!
+[21-Jun-2024 15:55:19 UTC] Hello, errors new2!
+[21-Jun-2024 16:09:51 UTC] Hello, errors new2!
+[21-Jun-2024 16:19:02 UTC] Hello, errors new2!
+[21-Jun-2024 17:01:43 UTC] Hello, errors new2!
+[21-Jun-2024 17:10:51 UTC] Hello, errors new2!
+[21-Jun-2024 17:12:43 UTC] Hello, errors new2!
+[21-Jun-2024 17:13:45 UTC] Hello, errors new2!
+[21-Jun-2024 17:15:21 UTC] Hello, errors new2!
+[21-Jun-2024 17:24:15 UTC] Hello, errors new2!
+[21-Jun-2024 17:26:08 UTC] Hello, errors new2!
+[21-Jun-2024 17:28:50 UTC] Hello, errors new2!
+[21-Jun-2024 17:30:09 UTC] Hello, errors new2!
+[21-Jun-2024 17:34:14 UTC] Hello, errors new2!
+[21-Jun-2024 17:37:04 UTC] Hello, errors new2!
+[21-Jun-2024 17:37:39 UTC] Hello, errors new2!
+[21-Jun-2024 17:39:08 UTC] Hello, errors new2!
+[21-Jun-2024 20:40:09 UTC] Hello, errors new2!
+[21-Jun-2024 20:40:40 UTC] Hello, errors new2!
+[21-Jun-2024 20:40:46 UTC] Hello, errors new2!
+[21-Jun-2024 21:52:29 UTC] Hello, errors new2!
+[21-Jun-2024 22:06:32 UTC] Hello, errors new2!
+[21-Jun-2024 22:08:27 UTC] Hello, errors new2!
+[21-Jun-2024 22:08:27 UTC] PHP Warning:  Undefined variable $config_file in /home/www/bfpanel/apps/file/query.php on line 67
+[21-Jun-2024 22:10:59 UTC] Hello, errors new2!
+[21-Jun-2024 22:11:39 UTC] Hello, errors new2!
+[21-Jun-2024 22:12:36 UTC] Hello, errors new2!
+[21-Jun-2024 22:13:04 UTC] Hello, errors new2!
+[21-Jun-2024 22:13:49 UTC] Hello, errors new2!
+[21-Jun-2024 22:31:56 UTC] Hello, errors new2!
+[21-Jun-2024 22:33:16 UTC] Hello, errors new2!
+[21-Jun-2024 22:45:16 UTC] Hello, errors new2!
+[21-Jun-2024 22:47:36 UTC] Hello, errors new2!
+[21-Jun-2024 22:48:46 UTC] Hello, errors new2!
+[21-Jun-2024 22:50:29 UTC] Hello, errors new2!
+[21-Jun-2024 22:52:49 UTC] Hello, errors new2!
+[21-Jun-2024 22:54:34 UTC] Hello, errors new2!
+[22-Jun-2024 08:25:58 UTC] Hello, errors new2!
+[22-Jun-2024 08:25:58 UTC] PHP Warning:  Undefined variable $config_file in /home/www/bfpanel/apps/file/query.php on line 67
+[22-Jun-2024 08:27:20 UTC] Hello, errors new2!
+[22-Jun-2024 08:27:20 UTC] PHP Warning:  Undefined variable $config_file in /home/www/bfpanel/apps/file/query.php on line 67
+[22-Jun-2024 08:27:44 UTC] Hello, errors new2!
+[22-Jun-2024 08:27:44 UTC] PHP Warning:  Undefined variable $config_file in /home/www/bfpanel/apps/file/query.php on line 67
+[22-Jun-2024 08:29:44 UTC] Hello, errors new2!
+[22-Jun-2024 08:34:44 UTC] Hello, errors new2!
+[22-Jun-2024 08:38:09 UTC] Hello, errors new2!
+[22-Jun-2024 10:14:57 UTC] Hello, errors new2!
+[22-Jun-2024 10:15:03 UTC] Hello, errors new2!
+[25-Jun-2024 09:03:40 UTC] Hello, errors new2!
+[26-Jun-2024 10:23:36 UTC] Hello, errors new2!
+[26-Jun-2024 10:25:40 UTC] Hello, errors new2!
+[26-Jun-2024 10:26:24 UTC] Hello, errors new2!

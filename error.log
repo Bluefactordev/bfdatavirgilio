@@ -1,0 +1,208 @@
+Error: The model `text-davinci-002` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations
+Error: The model `text-davinci-002` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations
+Error: This is a chat model and not supported in the v1/completions endpoint. Did you mean to use v1/chat/completions?
+Error: This is a chat model and not supported in the v1/completions endpoint. Did you mean to use v1/chat/completions?
+Error: This is a chat model and not supported in the v1/completions endpoint. Did you mean to use v1/chat/completions?
+Error: This is a chat model and not supported in the v1/completions endpoint. Did you mean to use v1/chat/completions?
+Generated SQL Query: Per contare quanti pazienti ci sono, è possibile utilizzare la seguente query SQL:
+
+```sql
+SELECT COUNT(*) AS NumeroPazienti
+FROM bf_anagrafica;
+```
+
+Questa query conta il numero di righe nella tabella `bf_anagrafica`, che rappresenta i pazienti nel database, restituendo il risultato con il nome "NumeroPazienti".
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Per contare quanti pazienti ci sono, è possibile utilizzare la seguente quer...' at line 1
+Generated SQL Query: Per determinare quanti pazienti ci sono nel database, possiamo contare i record univoci nella tabella `bf_anagrafica` utilizzando la seguente query SQL:
+
+```sql
+SELECT COUNT(DISTINCT ID) AS NumeroPazienti
+FROM bf_anagrafica;
+``` 
+
+Questa query restituirà il numero totale di pazienti presenti nella tabella `bf_anagrafica`.
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Per determinare quanti pazienti ci sono nel database, possiamo contare i reco...' at line 1
+Generated SQL Query: SELECT COUNT(*) AS NumeroDiPazienti
+FROM bf_anagrafica;
+Generated SQL Query: SELECT COUNT(*) AS Numero_Pazienti
+FROM bf_anagrafica;
+Generated SQL Query: SELECT COUNT(*) AS NumeroPazienti
+FROM bf_anagrafica;
+Generated SQL Query: SELECT COUNT(*) AS NumeroPazienti
+FROM bf_anagrafica
+WHERE Stato = 'Paziente';
+Generated SQL Query: SELECT COUNT(DISTINCT ID) AS NumeroPazienti
+FROM bf_anagrafica;
+Generated SQL Query: SELECT COUNT(*) AS NumPazienti
+FROM bf_anagrafica;
+Generated SQL Query: SELECT *
+FROM bf_anagrafica
+WHERE Nascita = '2022-01-01';
+Generated SQL Query: SELECT * 
+FROM bf_anagrafica
+WHERE Nascita = '1922-01-01';
+Generated SQL Query: SELECT COUNT(*) AS Numero_Pazienti
+FROM bf_anagrafica
+WHERE Cognome = 'Iaci3mTy2FH8ONgwg2xnTQ';
+Generated SQL Query: SELECT COUNT(*) AS NumeroPazienti
+FROM bf_anagrafica
+WHERE Cognome = 'Iaci3mTy2FH8ONgwg2xnTQ';
+Generated SQL Query: SELECT COUNT(*) AS NumeroPazienti
+FROM bf_anagrafica;
+Generated SQL Query: SELECT a.Nome, a.Cognome, DATEDIFF(Current_Date, a.Inserimento) AS TempoDiPermanenza
+FROM bf_anagrafica a
+ORDER BY TempoDiPermanenza DESC
+LIMIT 10;
+Generated SQL Query: SELECT bfa.ID, ba.Nome AS NomePaziente, ROUND(DATEDIFF(CURDATE(), bfa.Inserimento), 1) AS TempoPermanenza
+FROM bf_anagrafica AS bfa
+JOIN utente AS u ON bfa.ID = u.id
+JOIN accesso AS a ON u.id_accesso = a.id
+ORDER BY TempoPermanenza DESC
+LIMIT 10;
+Error: Unknown column 'ba.Nome' in 'field list'
+Generated SQL Query: SELECT bfa.ID, ba.Nome, TIMEDIFF(bfa.FinePresaInCarico, bfa.Inserimento) AS TempoDiPermanenza
+FROM bf_anagrafica AS bfa
+JOIN utente AS u ON bfa.ID = u.id_accesso
+JOIN accesso AS a ON u.id = a.id
+ORDER BY TempoDiPermanenza DESC
+LIMIT 10;
+Error: Unknown column 'ba.Nome' in 'field list'
+Generated SQL Query: SELECT ba.ID, ba.Nome, ba.Cognome, DATEDIFF(ba.FinePresaInCarico, ba.Inserimento) AS TempoPermanenza
+FROM bf_anagrafica ba
+ORDER BY TempoPermanenza DESC
+LIMIT 10;
+Generated SQL Query: SELECT COUNT(*) AS NumeroPazienti
+FROM bf_anagrafica;
+Data: 2024-06-21 11:34:21
+Generated SQL Query: Traceback (most recent call last):
+  File "/home/www/bfpanel/apps/file/queryagent.py", line 28, in <module>
+    logga("Inizializzazione del modulo queryagent.py" + '\n')
+  File "/home/www/bfpanel/apps/file/queryagent.py", line 22, in logga
+    with open('log.txt', 'a') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'log.txt'
+
+Data: 2024-06-21 11:34:55
+Generated SQL Query: {"sql_query": "SELECT COUNT(*) FROM paziente WHERE anno_nascita <= (YEAR(CURDATE()) - 100)"}
+
+Data: 2024-06-21 11:36:43
+Generated SQL Query: {"sql_query": "SELECT COUNT(*) FROM paziente WHERE anno_nascita <= (YEAR(CURDATE()) - 100)"}
+
+Data: 2024-06-21 14:19:26
+Generated SQL Query: {"sql_query": "SELECT COUNT(*) FROM utente;"}
+
+Data: 2024-06-21 14:21:58
+Generated SQL Query: {"sql_query": "SELECT COUNT(*) FROM utente;"}
+
+Data: 2024-06-21 14:23:59
+Generated SQL Query: {"sql_query": "SELECT COUNT(*) FROM utente"}
+
+Data: 2024-06-21 14:25:20
+Generated SQL Query: {"sql_query": "SELECT COUNT(*) FROM paziente"}
+
+Data: 2024-06-21 14:27:06
+Generated SQL Query: {"sql_query": "SELECT COUNT(*) FROM bf_anagrafica"}
+
+Data: 2024-06-21 14:32:41
+Generated SQL Query: SELECT COUNT(*) FROM bf_anagrafica
+Data: 2024-06-21 14:33:02
+Generated SQL Query: SELECT COUNT(*) FROM bf_anagrafica WHERE YEAR(CURDATE()) - YEAR(Nascita) BETWEEN 90 AND 100
+Data: 2024-06-21 14:45:19
+Generated SQL Query: SELECT COUNT(*) FROM bf_anagrafica
+Data: 2024-06-21 14:46:22
+Generated SQL Query: SELECT presidio.nome, COUNT(bf_interventi.ID) as numero_interventi FROM presidio LEFT JOIN bf_interventi ON presidio.id = bf_interventi.Rif_Presidio WHERE YEAR(bf_interventi.Data) = 2023 GROUP BY presidio.nome ORDER BY numero_interventi DESC
+Data: 2024-06-21 14:47:32
+Generated SQL Query: SELECT presidio.nome, COUNT(bf_interventi.ID) as NumeroInterventi FROM presidio INNER JOIN bf_interventi ON presidio.id = bf_interventi.Rif_Presidio WHERE YEAR(bf_interventi.Data) = 2023 GROUP BY presidio.nome ORDER BY NumeroInterventi DESC
+Data: 2024-06-21 15:33:26
+Generated SQL Query: SELECT COUNT(*) FROM bf_anagrafica
+Data: 2024-06-21 15:33:32
+Generated SQL Query: SELECT COUNT(*) FROM bf_anagrafica
+Data: 2024-06-21 15:50:26
+Generated SQL Query: SELECT * FROM utente;
+Data: 2024-06-21 16:09:57
+Generated SQL Query: SELECT COUNT(*) AS total_products FROM wp_ee_products_sync_list;
+Data: 2024-06-21 16:19:08
+Generated SQL Query: SELECT COUNT(*) AS total_products FROM wp_ee_product_sync_data;
+Data: 2024-06-21 17:01:47
+Generated SQL Query: SELECT COUNT(*) AS total_products FROM wp_ee_products_sync_list;
+Data: 2024-06-21 17:13:51
+Generated SQL Query: SELECT COUNT(*) as total_products FROM wp_ee_products_sync_list
+Data: 2024-06-21 17:15:27
+Generated SQL Query: SELECT COUNT(*) AS total_products FROM wp_ee_products_sync_list
+Data: 2024-06-21 17:26:15
+Generated SQL Query: SELECT COUNT(*) as total_products FROM wp_ee_products_sync_list;
+Data: 2024-06-21 17:28:56
+Generated SQL Query: SELECT COUNT(*) AS total_products FROM wp_ee_products_sync_list;
+Data: 2024-06-21 17:30:15
+Generated SQL Query: SELECT COUNT(*) AS total_products FROM wp_ee_products_sync_list;
+Data: 2024-06-21 17:34:20
+Generated SQL Query: SELECT COUNT(*) AS total_products FROM wp_ee_products_sync_list;
+Data: 2024-06-21 17:37:10
+Generated SQL Query: SELECT COUNT(*) AS product_count FROM wp_ee_products_sync_list;
+Data: 2024-06-21 17:37:44
+Generated SQL Query: SELECT COUNT(*) FROM wp_ee_products_sync_list;
+Data: 2024-06-21 17:39:13
+Generated SQL Query: SELECT COUNT(*) AS product_count FROM wp_posts WHERE post_type = 'product';
+Data: 2024-06-21 20:40:15
+Generated SQL Query: SELECT COUNT(*) AS total_products FROM wp_ee_products_sync_list;
+Data: 2024-06-21 20:40:46
+Generated SQL Query: SELECT COUNT(*) FROM wp_ee_products_sync_list;
+Data: 2024-06-21 20:40:51
+Generated SQL Query: SELECT COUNT(*) AS num_products FROM wp_ee_products_sync_list;
+Data: 2024-06-21 21:52:34
+Generated SQL Query: SELECT COUNT(*) FROM wp_ee_products_sync_list;
+Data: 2024-06-21 22:06:37
+Generated SQL Query: SELECT COUNT(*) AS total_products FROM wp_ee_products_sync_list;
+Data: 2024-06-21 22:08:33
+Generated SQL Query: SELECT COUNT(*) AS total_products FROM wp_posts WHERE post_type = 'product';
+Data: 2024-06-21 22:11:06
+Generated SQL Query: SELECT COUNT(*) FROM wp_posts WHERE post_type = 'product';
+Data: 2024-06-21 22:12:44
+Generated SQL Query: SELECT COUNT(*) AS order_count FROM wp_wc_order_stats WHERE YEAR(date_created) = 2022;
+Data: 2024-06-21 22:13:12
+Generated SQL Query: SELECT 
+    CASE 
+        WHEN orders_2022 > orders_2021 THEN '2022' 
+        ELSE '2021' 
+    END AS most_orders_year
+FROM (
+    SELECT 
+        (SELECT COUNT(*) FROM wp_wc_order_stats WHERE YEAR(date_created) = 2022) AS orders_2022, 
+        (SELECT COUNT(*) FROM wp_wc_order_stats WHERE YEAR(date_created) = 2021) AS orders_2021
+) AS order_counts;
+Data: 2024-06-21 22:13:55
+Generated SQL Query: SELECT YEAR(date_created) AS year, SUM(total_sales) AS total_revenue FROM wp_wc_order_stats GROUP BY YEAR(date_created) ORDER BY YEAR(date_created);
+Data: 2024-06-21 22:47:51
+Generated SQL Query: SELECT YEAR(Inserito) AS year, COUNT(*) AS order_count FROM Ordine_MageWu GROUP BY year ORDER BY year;
+Data: 2024-06-21 22:49:11
+Generated SQL Query: SELECT YEAR(created_at) AS year, SUM(grand_total) AS total_revenue FROM sales_order GROUP BY YEAR(created_at) ORDER BY year;
+Data: 2024-06-21 22:50:58
+Generated SQL Query: SELECT YEAR(o.created_at) AS year, SUM(o.grand_total) AS b2c_revenue FROM sales_order o JOIN customer_entity c ON o.customer_id = c.entity_id WHERE c.group_id IN (0, 1, 8) GROUP BY YEAR(o.created_at)
+Data: 2024-06-21 22:53:07
+Generated SQL Query: SELECT YEAR(o.created_at) AS year, SUM(o.grand_total) AS b2c_revenue FROM sales_order o LEFT JOIN customer_entity c ON o.customer_id = c.entity_id LEFT JOIN customer_group cg ON c.group_id = cg.customer_group_id WHERE (c.group_id IS NULL OR c.group_id IN (0, 1, 8)) AND o.state IN ('complete', 'processing') GROUP BY YEAR(o.created_at) ORDER BY YEAR(o.created_at);
+Data: 2024-06-21 22:54:52
+Generated SQL Query: SELECT o.increment_id AS order_id, c.email AS customer_email, c.group_id AS customer_group, o.grand_total AS total_order, o.created_at AS order_date FROM sales_order AS o LEFT JOIN customer_entity AS c ON o.customer_id = c.entity_id WHERE YEAR(o.created_at) = 2024 ORDER BY o.created_at;
+Data: 2024-06-22 08:26:02
+Generated SQL Query: SELECT COUNT(*) AS total_products FROM wp_posts WHERE post_type = 'product';
+Data: 2024-06-22 08:27:25
+Generated SQL Query: SELECT COUNT(*) AS total_products FROM wp_posts WHERE post_type = 'product' AND post_status = 'publish';
+Data: 2024-06-22 08:27:48
+Generated SQL Query: SELECT COUNT(*) FROM wp_posts WHERE post_type = 'product';
+Data: 2024-06-22 08:29:48
+Generated SQL Query: SELECT COUNT(*) AS total_products FROM wp_posts WHERE post_type = 'product';
+Data: 2024-06-22 08:34:48
+Generated SQL Query: SELECT COUNT(*) AS total_products FROM wp_wc_product_meta_lookup;
+Data: 2024-06-22 08:38:12
+Generated SQL Query: SELECT COUNT(*) AS total_products FROM wp_posts WHERE post_type = 'product';
+Data: 2024-06-22 10:15:16
+Generated SQL Query: SELECT p.entity_id, p.sku, SUM(oi.qty_ordered) AS total_quantity_sold FROM sales_order o JOIN sales_order_item oi ON o.entity_id = oi.order_id JOIN catalog_product_entity p ON oi.product_id = p.entity_id LEFT JOIN customer_entity c ON o.customer_id = c.entity_id LEFT JOIN customer_group cg ON c.group_id = cg.customer_group_id WHERE YEAR(o.created_at) = 2023 AND (cg.customer_group_id IS NULL OR cg.customer_group_id IN (0, 1, 8)) GROUP BY p.entity_id ORDER BY total_quantity_sold DESC;
+Data: 2024-06-22 10:15:35
+Generated SQL Query: SELECT p.sku, SUM(oi.qty_ordered) AS total_sold FROM sales_order_item AS oi JOIN sales_order AS o ON oi.order_id = o.entity_id JOIN customer_entity AS c ON o.customer_id = c.entity_id LEFT JOIN customer_group AS cg ON c.group_id = cg.customer_group_id JOIN catalog_product_entity AS p ON oi.product_id = p.entity_id WHERE o.state IN ('complete', 'processing') AND YEAR(o.created_at) = 2023 AND (c.group_id IS NULL OR c.group_id NOT IN (0, 1, 8)) GROUP BY p.sku ORDER BY total_sold DESC LIMIT 10;
+Data: 2024-06-25 09:04:00
+Generated SQL Query: SELECT COUNT(*) AS total_orders FROM sales_order WHERE DATE(created_at) = '2024-02-14' AND customer_id NOT IN (SELECT entity_id FROM customer_entity WHERE group_id IN (0, 1, 8));
+Data: 2024-06-26 10:23:58
+Generated SQL Query: SELECT COUNT(*) AS total_orders, DATE_FORMAT(Inserito, '%Y-%m-%d') AS order_date FROM Ordine_MageWu WHERE DATE_FORMAT(Inserito, '%m-%d') = '12-25' GROUP BY order_date
+Data: 2024-06-26 10:25:54
+Generated SQL Query: SELECT COUNT(*) AS total_orders, DATE(created_at) AS order_date FROM sales_order WHERE created_at BETWEEN '2023-11-15 00:00:00' AND '2023-11-30 23:59:59' AND customer_id IN (SELECT customer_id FROM customer_entity WHERE group_id IN (0, 1, 8)) GROUP BY DATE(created_at)
+Data: 2024-06-26 10:26:49
+Generated SQL Query: SELECT COUNT(*) AS total_orders FROM sales_order WHERE store_id NOT IN (0, 1, 8) AND created_at BETWEEN '15-11' AND '30-11'
